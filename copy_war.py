@@ -52,7 +52,7 @@ class SSHConnection(object):
         self.transport.close()
  
 if __name__ == "__main__":
-    host = "172.31.43.190"
+    host = "172.31.26.57"
     username = "jenkinsagent"
     pw = "otzma7639"
  
