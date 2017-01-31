@@ -52,13 +52,14 @@ class SSHConnection(object):
         self.transport.close()
  
 if __name__ == "__main__":
-    host = "172.31.26.57"
+    #host = "172.31.26.57"
     username = "jenkinsagent"
     pw = "otzma7639"
  
     origin = sys.argv[1]
     dst =sys.argv[2]
- 
+    host =sys.argv[3]
+
     ssh = SSHConnection(host, username, pw)
     ssh.get(origin, dst)
     ssh.close()
